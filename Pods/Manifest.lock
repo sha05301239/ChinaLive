@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.8.0)
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Kingfisher (4.10.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - NVActivityIndicatorView (4.5.0):
+    - NVActivityIndicatorView/Presenter (= 4.5.0)
+  - NVActivityIndicatorView/Presenter (4.5.0)
+  - SCLAlertView (0.8)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DZNEmptyDataSet
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - Masonry
+  - MBProgressHUD
+  - NVActivityIndicatorView
+  - SCLAlertView
+  - SDCycleScrollView
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DZNEmptyDataSet
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Masonry
+    - MBProgressHUD
+    - NVActivityIndicatorView
+    - SCLAlertView
+    - SDCycleScrollView
+    - SDWebImage
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  NVActivityIndicatorView: 1e4e3ed79248cf1666af182593c3a2acf0fcf193
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 3efc45bd7358900a6afafbb6571d3b2b39d6070e
+
+COCOAPODS: 1.5.3
