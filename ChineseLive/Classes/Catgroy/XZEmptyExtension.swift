@@ -7,14 +7,10 @@
 //
 
 import UIKit
-import DZNEmptyDataSet
 
-extension UIView:DZNEmptyDataSetDelegate,DZNEmptyDataSetSource{
-    
-    public func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
-        return UIImage.init(named: "<#T##String#>")
-    }
-    
+
+extension UIView{
+   
 }
 
 
