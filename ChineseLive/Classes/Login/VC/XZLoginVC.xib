@@ -32,7 +32,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBJ" translatesAutoresizingMaskIntoConstraints="NO" id="erD-E8-55v">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBj" translatesAutoresizingMaskIntoConstraints="NO" id="erD-E8-55v">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaG-t4-lYs" userLabel="closeBtn">
@@ -252,7 +252,7 @@
         </view>
     </objects>
     <resources>
-        <image name="loginBJ" width="375" height="667"/>
+        <image name="loginBj" width="375" height="667"/>
         <image name="登录-微信logo" width="42" height="42"/>
         <image name="登录手机区号-下拉" width="11" height="5.6666665077209473"/>
         <image name="登录页-LINE" width="42" height="42"/>

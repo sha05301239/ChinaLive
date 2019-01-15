@@ -11,13 +11,7 @@ import UIKit
 class XZNomalSectionView: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-//
-//        for view in sectionHeader.subviews{
-//
-//            view.removeFromSuperview()
-//
-//        }
+ 
         
         let leftImg =  UIImageView(image: UIImage(named: "home_haitan"))
         self.addSubview(leftImg)
@@ -52,7 +46,7 @@ class XZNomalSectionView: UICollectionReusableView {
             make.top.bottom.equalTo(self)
         }
         
-        self.backgroundColor = ddBlueColor()
+        self.backgroundColor = UIColor.white
         
         
     }

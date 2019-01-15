@@ -98,8 +98,24 @@ func ddColorFromHex(_ colorStr:String) -> UIColor {
     return color
 }
 
+/**动态计算label宽度*/
+func getLabelWidth(str:String,fontSize:CGFloat,height:CGFloat)->CGFloat{
+    
+    let  statusLabelText : NSString = str as NSString
+    let size = CGSize(width: CGFloat(MAXFLOAT), height: height)
+    let strSize = statusLabelText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: fontSize)], context: nil).size
+    return strSize.width
+}
 
-
+/**动态j计算label宽度*/
+func getLabelHeight(str:String,fontSize:CGFloat,width:CGFloat)->CGFloat{
+    let statusLabelText : NSString = str as NSString
+    let size = CGSize(width: width, height: CGFloat(MAXFLOAT))
+    let dict = NSDictionary(object: UIFont.systemFont(ofSize: fontSize), forKey: NSAttributedString.Key.font as NSCopying)
+    let strSize = statusLabelText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dict as? [NSAttributedString.Key : Any], context: nil).size
+    return strSize.height
+    
+}
 
 
 
@@ -157,10 +173,7 @@ func DDLog  (_ Log: Any...,file : String = #file, lineNumber : Int = #line ){
     
     #endif
     
-    
-    
 }
-
 
 /**判断手机号*/
 func isPhoneNumber(phoneNumber:String) -> Bool {

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9B67E5D437DCB4475448F656 /* Pods_ChineseLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA257B7BB2EDF5FA7D346A27 /* Pods_ChineseLive.framework */; };
+		E307C71F21ED8DCD00A120E4 /* XZHomeClassificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307C71E21ED8DCD00A120E4 /* XZHomeClassificationCell.swift */; };
+		E307C72121ED8ED300A120E4 /* XZHomeClassifHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307C72021ED8ED300A120E4 /* XZHomeClassifHeaderView.swift */; };
+		E307C72321ED90C000A120E4 /* XZHomeClassItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307C72221ED90C000A120E4 /* XZHomeClassItemCell.swift */; };
+		E307C72521EDB15A00A120E4 /* XZEmptyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307C72421EDB15A00A120E4 /* XZEmptyExtension.swift */; };
 		E31E033121E6DCFA00471EF9 /* XZHomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033021E6DCFA00471EF9 /* XZHomePageCell.swift */; };
 		E31E033521E6EF2F00471EF9 /* XZHomeNomalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033421E6EF2F00471EF9 /* XZHomeNomalCell.swift */; };
 		E31E033A21E7184600471EF9 /* XZHomeNomalItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033921E7184600471EF9 /* XZHomeNomalItemModel.swift */; };
@@ -50,6 +54,10 @@
 /* Begin PBXFileReference section */
 		01BF06B55CB99A0932F7E243 /* Pods-ChineseLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChineseLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChineseLive/Pods-ChineseLive.debug.xcconfig"; sourceTree = "<group>"; };
 		7B6D5B2371BFB4CE30F9F9E4 /* Pods-ChineseLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChineseLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChineseLive/Pods-ChineseLive.release.xcconfig"; sourceTree = "<group>"; };
+		E307C71E21ED8DCD00A120E4 /* XZHomeClassificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeClassificationCell.swift; sourceTree = "<group>"; };
+		E307C72021ED8ED300A120E4 /* XZHomeClassifHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeClassifHeaderView.swift; sourceTree = "<group>"; };
+		E307C72221ED90C000A120E4 /* XZHomeClassItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeClassItemCell.swift; sourceTree = "<group>"; };
+		E307C72421EDB15A00A120E4 /* XZEmptyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZEmptyExtension.swift; sourceTree = "<group>"; };
 		E31E033021E6DCFA00471EF9 /* XZHomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomePageCell.swift; sourceTree = "<group>"; };
 		E31E033421E6EF2F00471EF9 /* XZHomeNomalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeNomalCell.swift; sourceTree = "<group>"; };
 		E31E033921E7184600471EF9 /* XZHomeNomalItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeNomalItemModel.swift; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 				E31E034421E741F000471EF9 /* XZNomalHeaderView.swift */,
 				E376BD6021E74CC0000C8035 /* XZNomalSectionView.swift */,
 				E3B6C69821E82C2B00AF2A81 /* XZHomeNavView.swift */,
+				E307C72021ED8ED300A120E4 /* XZHomeClassifHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 		E35E09BD21DDA27600CC0236 /* Catgroy */ = {
 			isa = PBXGroup;
 			children = (
+				E307C72421EDB15A00A120E4 /* XZEmptyExtension.swift */,
 			);
 			path = Catgroy;
 			sourceTree = "<group>";
@@ -366,6 +376,8 @@
 			children = (
 				E31E033021E6DCFA00471EF9 /* XZHomePageCell.swift */,
 				E31E033421E6EF2F00471EF9 /* XZHomeNomalCell.swift */,
+				E307C71E21ED8DCD00A120E4 /* XZHomeClassificationCell.swift */,
+				E307C72221ED90C000A120E4 /* XZHomeClassItemCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -518,6 +530,7 @@
 				E35E0A0021DDA31C00CC0236 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E35E0A0721DDA31C00CC0236 /* XZMBProgressHUD.m in Sources */,
 				E31E033D21E7189B00471EF9 /* XZBaseModel.swift in Sources */,
+				E307C72521EDB15A00A120E4 /* XZEmptyExtension.swift in Sources */,
 				E36C105421DF5B19005C6724 /* XZLoginVC.swift in Sources */,
 				E31E033121E6DCFA00471EF9 /* XZHomePageCell.swift in Sources */,
 				E380590E21E3212700B4F8A9 /* WRNavigationBar.swift in Sources */,
@@ -529,11 +542,14 @@
 				E35E0A0821DDA31C00CC0236 /* MBProgressHUD+XZExtension.m in Sources */,
 				E35E0A0221DDA31C00CC0236 /* DHGifImageOperation.m in Sources */,
 				E35E09DF21DDA2F500CC0236 /* XZCommon.swift in Sources */,
+				E307C72121ED8ED300A120E4 /* XZHomeClassifHeaderView.swift in Sources */,
 				E35E0A1121DDABBF00CC0236 /* XZBaseNavController.swift in Sources */,
+				E307C71F21ED8DCD00A120E4 /* XZHomeClassificationCell.swift in Sources */,
 				E380590F21E3212700B4F8A9 /* WRCustomNavigationBar.swift in Sources */,
 				E35E0A0521DDA31C00CC0236 /* XZPublicTools.swift in Sources */,
 				E380591221E32E3D00B4F8A9 /* XZBaseView.swift in Sources */,
 				E35E0A0621DDA31C00CC0236 /* XZMyPickerView.swift in Sources */,
+				E307C72321ED90C000A120E4 /* XZHomeClassItemCell.swift in Sources */,
 				E3FDBCCA21E5F98200BB75AF /* XZHomeVC.swift in Sources */,
 				E35E0A0321DDA31C00CC0236 /* XZGuidePageHUDVC.m in Sources */,
 				E35E09D721DDA28D00CC0236 /* ViewController.swift in Sources */,

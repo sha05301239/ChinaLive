@@ -9,7 +9,7 @@
 #ifndef ChineseLive_BridgiingHeader_h
 #define ChineseLive_BridgiingHeader_h
 
-//#import "SDCycleScrollView.h"
+//#import "UIScrollView+EmptyDataSet.h"
 
 
 #endif /* ChineseLive_BridgiingHeader_h */

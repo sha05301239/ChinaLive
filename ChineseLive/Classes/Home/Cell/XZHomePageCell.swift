@@ -75,6 +75,8 @@ class XZHomePageCell: UICollectionViewCell {
     private func setupUI(){
         
         self.contentView.addSubview(self.myCollectionView)
+//        self.myCollectionView.frame = self.contentView
+//        .bounds
         self.myCollectionView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
