@@ -65,8 +65,10 @@ extension XZTabBarVC:XZTabbarDelegate{
         childVC.tabBarItem.image = UIImage(named: imageName)
         childVC.tabBarItem.selectedImage = UIImage(named: selectImgName)?.withRenderingMode(.alwaysOriginal)
         childVC.view.backgroundColor = ddRandomColor()
+        let xzNavVC = XZBaseNavController.init(rootViewController: childVC)
+        
         //讲vc添加进来
-        addChild(childVC)
+        addChild(xzNavVC)
         
     }
     

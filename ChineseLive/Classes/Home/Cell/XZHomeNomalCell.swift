@@ -8,8 +8,9 @@
 
 import UIKit
 
+
 class XZHomeNomalCell: UICollectionViewCell {
-    
+   
     
     var model : XZHomeNomalItemModel?{
         didSet{
@@ -139,3 +140,4 @@ extension XZHomeNomalCell{
     
     
 }
+

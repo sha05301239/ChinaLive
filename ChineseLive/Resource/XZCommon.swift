@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import SnapKit
 import SCLAlertView
+ 
 
 let kStatusBarH : CGFloat = 20
 let kNavigationBarH : CGFloat = 44

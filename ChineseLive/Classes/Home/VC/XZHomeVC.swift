@@ -10,6 +10,7 @@ import UIKit
 
 class XZHomeVC: XZBaseVC {
 
+    
     //navTitleView
     lazy var topCollectionView : XZHomeNavView = {[weak self] in
        let topCollectionView = XZHomeNavView.init(frame: CGRect.zero)
@@ -28,6 +29,8 @@ class XZHomeVC: XZBaseVC {
         let myCollectionView = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
         myCollectionView.delegate = self
         myCollectionView.dataSource = self;
+        myCollectionView.emptyDataSetSource = self;
+        myCollectionView.emptyDataSetDelegate = self
         myCollectionView.backgroundColor = ddBlueColor()
         myCollectionView.register(XZHomeClassificationCell.self, forCellWithReuseIdentifier: NSStringFromClass(XZHomeClassificationCell.self))//分类
         myCollectionView.register(XZHomePageCell.self, forCellWithReuseIdentifier: NSStringFromClass(XZHomePageCell.self))
@@ -40,13 +43,15 @@ class XZHomeVC: XZBaseVC {
     //懒加载数组
     lazy var dataList : Array = { () -> [String] in
        let dataList = ["分类","娱乐","颜值","语音直播","未知","未知","未知","未知"]
+//        let dataList = Array<String>()
+
         return dataList
     }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.isLoading = true
         // Do any additional setup after loading the view.
         DDLog("首页")
         setupCollectionView()
@@ -55,9 +60,18 @@ class XZHomeVC: XZBaseVC {
         //默认滚动到第二个item（分类）
       
         DispatchQueue.main.asyncAfter(deadline: .now()+0.01) {
+            
+             
             self.myCollectionView.scrollToItem(at: IndexPath(item: 1, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: false)
         }
        
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now()+2) {
+//            self.isLoading = false
+////          self.dataList = ["分类","娱乐","颜值","语音直播","未知","未知","未知","未知"]
+//          self.myCollectionView.reloadData()
+//        }
+        
     }
     
     
@@ -92,7 +106,8 @@ class XZHomeVC: XZBaseVC {
 //MARK:-- UICollectionViewDataSource
 extension XZHomeVC:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      return self.dataList.count;
+        
+        return self.dataList.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -162,6 +177,20 @@ extension XZHomeVC:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 
 //顶部导航collectionView
 extension XZHomeVC:XZHomeNavViewDelegate{
+   
+    //搜索
+    func clickSearchBtn(_ sender: UIButton) {
+        let homeSearchVC = XZSearchVC()
+        navigationController?.pushViewController(homeSearchVC, animated: false)
+        DDLog("navigationController = \(String(describing: navigationController))")
+//        self.present(homeSearchVC
+//            ,animated: false, completion: nil)
+    }
+    
+    func clickMoreBtn(_ sender: UIButton) {
+        DDLog("点击更多")
+    }
+    
     //点击导航栏按钮
     func homePageToScrollatIndexPath(indexPath: IndexPath) {
         if indexPath.item >= self.dataList.count {
@@ -180,6 +209,20 @@ extension XZHomeVC:XZHomeNavViewDelegate{
     }
     
     
+    
+    
+    
+    
+    
 }
 
+
+
+extension XZHomeVC{
+    
+    
+    
+    
+    
+}
 

@@ -48,6 +48,8 @@
 		E380591221E32E3D00B4F8A9 /* XZBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380591121E32E3D00B4F8A9 /* XZBaseView.swift */; };
 		E380591421E32EE900B4F8A9 /* XZLoginSelectCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380591321E32EE900B4F8A9 /* XZLoginSelectCountryView.swift */; };
 		E3B6C69921E82C2B00AF2A81 /* XZHomeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6C69821E82C2B00AF2A81 /* XZHomeNavView.swift */; };
+		E3D89B5D21EEE69500CE7BAB /* XZEmptyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D89B5C21EEE69500CE7BAB /* XZEmptyHomeView.swift */; };
+		E3D89B5F21EF2C4000CE7BAB /* XZSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D89B5E21EF2C4000CE7BAB /* XZSearchVC.swift */; };
 		E3FDBCCA21E5F98200BB75AF /* XZHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDBCC921E5F98200BB75AF /* XZHomeVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +107,8 @@
 		E380591121E32E3D00B4F8A9 /* XZBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZBaseView.swift; sourceTree = "<group>"; };
 		E380591321E32EE900B4F8A9 /* XZLoginSelectCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZLoginSelectCountryView.swift; sourceTree = "<group>"; };
 		E3B6C69821E82C2B00AF2A81 /* XZHomeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeNavView.swift; sourceTree = "<group>"; };
+		E3D89B5C21EEE69500CE7BAB /* XZEmptyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZEmptyHomeView.swift; sourceTree = "<group>"; };
+		E3D89B5E21EF2C4000CE7BAB /* XZSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZSearchVC.swift; sourceTree = "<group>"; };
 		E3FDBCC921E5F98200BB75AF /* XZHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeVC.swift; sourceTree = "<group>"; };
 		FA257B7BB2EDF5FA7D346A27 /* Pods_ChineseLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChineseLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -342,6 +346,7 @@
 			children = (
 				E35E0A1621DDAC1300CC0236 /* XZTabbar.swift */,
 				E380591121E32E3D00B4F8A9 /* XZBaseView.swift */,
+				E3D89B5C21EEE69500CE7BAB /* XZEmptyHomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				E3FDBCC921E5F98200BB75AF /* XZHomeVC.swift */,
+				E3D89B5E21EF2C4000CE7BAB /* XZSearchVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -529,6 +535,7 @@
 			files = (
 				E35E0A0021DDA31C00CC0236 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				E35E0A0721DDA31C00CC0236 /* XZMBProgressHUD.m in Sources */,
+				E3D89B5D21EEE69500CE7BAB /* XZEmptyHomeView.swift in Sources */,
 				E31E033D21E7189B00471EF9 /* XZBaseModel.swift in Sources */,
 				E307C72521EDB15A00A120E4 /* XZEmptyExtension.swift in Sources */,
 				E36C105421DF5B19005C6724 /* XZLoginVC.swift in Sources */,
@@ -562,6 +569,7 @@
 				E35E0A0421DDA31C00CC0236 /* DHGuidePageHUD.m in Sources */,
 				E35E0A1221DDABBF00CC0236 /* XZBaseVC.swift in Sources */,
 				E380590921E2E6DC00B4F8A9 /* XZUserHelper.swift in Sources */,
+				E3D89B5F21EF2C4000CE7BAB /* XZSearchVC.swift in Sources */,
 				E35E0A1721DDAC1300CC0236 /* XZTabbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

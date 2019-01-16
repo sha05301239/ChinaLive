@@ -11,8 +11,7 @@ import UIKit
 class XZNomalSectionView: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
- 
-        
+  
         let leftImg =  UIImageView(image: UIImage(named: "home_haitan"))
         self.addSubview(leftImg)
         leftImg.snp.makeConstraints { (make) in
@@ -47,7 +46,6 @@ class XZNomalSectionView: UICollectionReusableView {
         }
         
         self.backgroundColor = UIColor.white
-        
         
     }
     

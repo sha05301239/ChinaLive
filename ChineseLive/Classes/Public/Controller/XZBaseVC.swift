@@ -26,6 +26,7 @@ class XZBaseVC: UIViewController {
         super.viewDidLoad()
 
 //       self.view .addSubview(self.myNavBar)
+        self.view.backgroundColor = UIColor.white
         statusBarStyle = .default
         navBarShadowImageHidden = true
         // 设置导航栏默认的背景颜色
@@ -84,6 +85,7 @@ extension XZBaseVC:DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
      2：必须返回富文本（可设置其颜色，字号，风格等。或：nil))
      */
     public func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString.init(string: "", attributes: nil)
         let str = "洪荒之力"
         return NSAttributedString.init(string: str, attributes: nil)
     }
@@ -93,7 +95,7 @@ extension XZBaseVC:DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
      */
     
     public func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        let str = "空白正文"
+        let str = "玩命加载中"
         return NSAttributedString.init(string: str, attributes: nil)
     }
     
@@ -107,6 +109,20 @@ extension XZBaseVC:DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
     /**空白页颜色e色调（注：
      * 该方法一般不用，默认为nil）
      */
+    
+//    func customView(forEmptyDataSet scrollView: UIScrollView!) -> UIView! {
+//        DDLog("scrollViewscrollView = \(String(describing: scrollView))")
+//        if self.isLoading {
+//            return nil
+//        }else{
+//            let customView = XZEmptyHomeView.init(frame:scrollView.bounds)
+//
+//            return customView
+//        }
+//
+//
+//    }
+//
     public func imageTintColor(forEmptyDataSet scrollView: UIScrollView!) -> UIColor! {
         return nil
     }
@@ -115,34 +131,41 @@ extension XZBaseVC:DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
      该方法是设置图片或视图的动画，可设置动画组CAAnimationGroup)
      */
     public func imageAnimation(forEmptyDataSet scrollView: UIScrollView!) -> CAAnimation! {
-        /*
-         CABasicAnimation *animation = [CABasicAnimation         animationWithKeyPath: @"transform"];
-         
-         animation.fromValue = [NSValue                  valueWithCATransform3D:CATransform3DIdentity];
-         animation.toValue = [NSValue   valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0)];
-         
-         animation.duration = 0.25;
-         animation.cumulative = YES;
-         animation.repeatCount = MAXFLOAT;
-         
-         return animation;
-         */
         
-        return nil
+//         CABasicAnimation *animation = [CABasicAnimation         animationWithKeyPath: @"transform"];
+        
+//         animation.fromValue = [NSValue                  valueWithCATransform3D:CATransform3DIdentity];
+//         animation.toValue = [NSValue   valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0)];
+//
+//         animation.duration = 0.25;
+//         animation.cumulative = YES;
+//         animation.repeatCount = MAXFLOAT;
+//
+//         return animation;
+        
+        let animation = CABasicAnimation(keyPath: "transform")
+        //开始位置
+        animation.fromValue = CATransform3DIdentity
+        //结束位置
+        animation.toValue = CATransform3DMakeRotation(CGFloat(Double.pi/2), 0.0, 0.0, 1.0)
+        animation.duration = 0.25
+        animation.isCumulative = true
+        animation.repeatCount = MAXFLOAT
+        return animation
+//        return nil
     }
-    
+    func verticalOffset(forEmptyDataSet scrollView: UIScrollView!) -> CGFloat {
+        return 0 //整体位置
+    }
     public func spaceHeight(forEmptyDataSet scrollView: UIScrollView!) -> CGFloat {
-        return -80
+        return 0  //标题、图片位置
     }
     
     public func backgroundColor(forEmptyDataSet scrollView: UIScrollView!) -> UIColor! {
         return UIColor.white
     }
     
-    
-    
-    
-    
+     
     //MARK:--DZNEmptyDataSetDelegate Methods
     public func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
         return true

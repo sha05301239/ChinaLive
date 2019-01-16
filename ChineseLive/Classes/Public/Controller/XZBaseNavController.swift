@@ -12,7 +12,7 @@ class XZBaseNavController: UINavigationController,UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
         interactivePopGestureRecognizer?.delegate = self;
         

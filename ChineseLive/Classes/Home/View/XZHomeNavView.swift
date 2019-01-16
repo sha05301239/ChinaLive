@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class XZNavViewItemCell:UICollectionViewCell{
     lazy var itemLabel : UILabel = {
        let label = UILabel.init()
@@ -50,8 +51,14 @@ class XZNavViewItemCell:UICollectionViewCell{
 
 
 //点击滚动代理
-protocol XZHomeNavViewDelegate {
-    func homePageToScrollatIndexPath(indexPath:IndexPath) -> ()
+@objc protocol XZHomeNavViewDelegate {
+    @objc optional
+    func homePageToScrollatIndexPath(indexPath:IndexPath) -> ()//点击title
+    
+    func clickSearchBtn(_ sender:UIButton) ->()//点击搜索
+    
+    @objc
+    func clickMoreBtn(_ sender:UIButton) ->()//点击更多
 }
 
 
@@ -148,6 +155,14 @@ extension XZHomeNavView{
     @objc private func clickSearchBtn(_ sender:UIButton){
     DDLog("clickSearchBtn")
         
+        guard let delegate = self.delegate else { return }
+        delegate.clickSearchBtn(sender)
+        
+//        let homeSearchVC = XZSearchVC()
+//        self.
+        
+        
+        
     }
     //点击更多
     @objc private func clickMoreBtn(_ sender:UIButton){
@@ -198,7 +213,7 @@ extension XZHomeNavView:UICollectionViewDataSource,UICollectionViewDelegateFlowL
         myCollectionViiew.reloadData()
         myCollectionViiew.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         guard let delegate = self.delegate else { return  }
-        delegate.homePageToScrollatIndexPath(indexPath: indexPath)
+        delegate.homePageToScrollatIndexPath!(indexPath: indexPath)
         
     }
     
