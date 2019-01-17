@@ -12,6 +12,8 @@
 		E307C72121ED8ED300A120E4 /* XZHomeClassifHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307C72021ED8ED300A120E4 /* XZHomeClassifHeaderView.swift */; };
 		E307C72321ED90C000A120E4 /* XZHomeClassItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307C72221ED90C000A120E4 /* XZHomeClassItemCell.swift */; };
 		E307C72521EDB15A00A120E4 /* XZEmptyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307C72421EDB15A00A120E4 /* XZEmptyExtension.swift */; };
+		E30BAF4121F01109008C410B /* XZSearchCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BAF4021F01109008C410B /* XZSearchCollectionView.swift */; };
+		E30BAF4321F0111E008C410B /* XZSearchResultCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BAF4221F0111E008C410B /* XZSearchResultCollectionView.swift */; };
 		E31E033121E6DCFA00471EF9 /* XZHomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033021E6DCFA00471EF9 /* XZHomePageCell.swift */; };
 		E31E033521E6EF2F00471EF9 /* XZHomeNomalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033421E6EF2F00471EF9 /* XZHomeNomalCell.swift */; };
 		E31E033A21E7184600471EF9 /* XZHomeNomalItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033921E7184600471EF9 /* XZHomeNomalItemModel.swift */; };
@@ -60,6 +62,8 @@
 		E307C72021ED8ED300A120E4 /* XZHomeClassifHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeClassifHeaderView.swift; sourceTree = "<group>"; };
 		E307C72221ED90C000A120E4 /* XZHomeClassItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeClassItemCell.swift; sourceTree = "<group>"; };
 		E307C72421EDB15A00A120E4 /* XZEmptyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZEmptyExtension.swift; sourceTree = "<group>"; };
+		E30BAF4021F01109008C410B /* XZSearchCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZSearchCollectionView.swift; sourceTree = "<group>"; };
+		E30BAF4221F0111E008C410B /* XZSearchResultCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZSearchResultCollectionView.swift; sourceTree = "<group>"; };
 		E31E033021E6DCFA00471EF9 /* XZHomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomePageCell.swift; sourceTree = "<group>"; };
 		E31E033421E6EF2F00471EF9 /* XZHomeNomalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeNomalCell.swift; sourceTree = "<group>"; };
 		E31E033921E7184600471EF9 /* XZHomeNomalItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeNomalItemModel.swift; sourceTree = "<group>"; };
@@ -142,6 +146,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E30BAF3F21F010CB008C410B /* SearchCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E30BAF4021F01109008C410B /* XZSearchCollectionView.swift */,
+				E30BAF4221F0111E008C410B /* XZSearchResultCollectionView.swift */,
+			);
+			path = SearchCollectionView;
+			sourceTree = "<group>";
+		};
 		E31E032F21E6DC6B00471EF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +162,7 @@
 				E376BD6021E74CC0000C8035 /* XZNomalSectionView.swift */,
 				E3B6C69821E82C2B00AF2A81 /* XZHomeNavView.swift */,
 				E307C72021ED8ED300A120E4 /* XZHomeClassifHeaderView.swift */,
+				E30BAF3F21F010CB008C410B /* SearchCollectionView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -543,6 +557,7 @@
 				E380590E21E3212700B4F8A9 /* WRNavigationBar.swift in Sources */,
 				E35E09FF21DDA31C00CC0236 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				E31E034521E741F000471EF9 /* XZNomalHeaderView.swift in Sources */,
+				E30BAF4121F01109008C410B /* XZSearchCollectionView.swift in Sources */,
 				E35E09DB21DDA28D00CC0236 /* AppDelegate.swift in Sources */,
 				E3B6C69921E82C2B00AF2A81 /* XZHomeNavView.swift in Sources */,
 				E35E09FD21DDA31C00CC0236 /* XZNetWorkingTool.swift in Sources */,
@@ -571,6 +586,7 @@
 				E380590921E2E6DC00B4F8A9 /* XZUserHelper.swift in Sources */,
 				E3D89B5F21EF2C4000CE7BAB /* XZSearchVC.swift in Sources */,
 				E35E0A1721DDAC1300CC0236 /* XZTabbar.swift in Sources */,
+				E30BAF4321F0111E008C410B /* XZSearchResultCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
