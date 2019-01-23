@@ -125,10 +125,7 @@ func DDFRAME(x:CGFloat,y:CGFloat,w:CGFloat,h:CGFloat) -> CGRect{
     
     return CGRect(x: x*(kWindowW/currentPX), y: y*(kWindowW/currentPX), width: w*(kWindowW/currentPX), height: h*(kWindowW/currentPX))
 }
-/**随机颜色*/
-func ddRandomColor() -> UIColor {
-    return UIColor(red:CGFloat(arc4random_uniform(255))/255.0, green: CGFloat(arc4random_uniform(255))/255.0, blue: CGFloat(arc4random_uniform(255))/255.0, alpha: 1)
-}
+
 /**支付宝蓝色主题*/
 func ddBlueColor () -> UIColor{
     
@@ -153,6 +150,14 @@ func ddColor(_ R:CGFloat ,_ G:CGFloat ,_ B:CGFloat) -> UIColor {
 func ddColorA(_ r:CGFloat ,_ g:CGFloat ,_ b:CGFloat,_ a : CGFloat) -> UIColor {
     return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a/255.0)
 }
+/**随机颜色*/
+func ddRandomColor() -> UIColor {
+    return UIColor(red:CGFloat(arc4random_uniform(255))/255.0, green: CGFloat(arc4random_uniform(255))/255.0, blue: CGFloat(arc4random_uniform(255))/255.0, alpha: 1)
+}
+///**随机颜色*/
+//func DDRandomColor() -> UIColor {
+//    return ddColor(CGFloat(arc4random_uniform(255)), CGFloat(arc4random_uniform(255)), CGFloat(arc4random_uniform(255)))
+//}
 
 
 /**比例值*/

@@ -17,4 +17,7 @@ pod 'IQKeyboardManagerSwift'  #, '5.0.0'
 pod 'SDCycleScrollView'  #,'~> 1.75'
 pod 'MBProgressHUD'
 pod 'SCLAlertView'
+pod 'FMDB'
+pod "PLPlayerKit", :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec'#七牛
+pod 'SDWebImage'
 end

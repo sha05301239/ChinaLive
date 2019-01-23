@@ -10,6 +10,8 @@
 #define ChineseLive_BridgiingHeader_h
 
 //#import "UIScrollView+EmptyDataSet.h"
-
-
+#import "XZSearchModel.h"
+#import "XZSearchFMDBManager.h"
+#import "MBProgressHUD+XZExtension.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #endif /* ChineseLive_BridgiingHeader_h */

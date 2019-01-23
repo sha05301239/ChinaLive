@@ -88,7 +88,14 @@ import UIKit
         
         
         do {
-            let archiveUserData =  try NSKeyedArchiver.archivedData(withRootObject: userData, requiringSecureCoding: true)
+            var archiveUserData : Data
+            
+            if #available(iOS 11.0, *) {
+                archiveUserData =  try NSKeyedArchiver.archivedData(withRootObject: userData, requiringSecureCoding: true)
+            } else {
+                // Fallback on earlier versions
+                archiveUserData = NSKeyedArchiver.archivedData(withRootObject: userData)
+            }
             
            UserDefaults.standard.set(archiveUserData, forKey: XZUserHelper.shareUserHelper.userDataKey)
             UserDefaults.standard.synchronize()
@@ -110,8 +117,16 @@ import UIKit
         let user = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! XZUserHelper
        
         do{
-             let user1 = try NSKeyedUnarchiver.unarchivedObject(ofClass:self, from: (data as! Data))
-            return user1!
+            
+             var user1 : XZUserHelper
+            
+            if #available(iOS 11.0, *) {
+                user1 = try NSKeyedUnarchiver.unarchivedObject(ofClass:self, from: (data as! Data))!
+            } else {
+                // Fallback on earlier versions
+                user1 = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! XZUserHelper
+            }
+            return user1
         }
         
         catch {

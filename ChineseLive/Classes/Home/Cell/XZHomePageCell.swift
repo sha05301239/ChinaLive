@@ -118,7 +118,7 @@ class XZHomePageCell: UICollectionViewCell {
             self.dataList.append(model)
             self.dataList.append(model1)
             self.dataList.append(model2)
-             self.isLoading = false
+            self.isLoading = false
             self.myCollectionView.reloadData()
             
         }
@@ -194,19 +194,13 @@ extension XZHomePageCell:UICollectionViewDelegateFlowLayout,UICollectionViewData
             }else if (indexPath.section == 1){
                 let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: NSStringFromClass(XZNomalSectionView.self), for: indexPath)
                 
-              
-                
                 return sectionHeader
-                
             }
-            
             
         }
             
             
         return UICollectionReusableView.init()
-        
-     
         
     }
  

@@ -18,9 +18,9 @@ class XZTabBarVC: UITabBarController {
         setupItemTextAttrs()
         //添加子控制器
         setupChildViewControllers(XZHomeVC.init(), "首页", "home_normal", "home_highlight")
-        setupChildViewControllers(UIViewController.init(), "title1", "home_normal", "home_highlight")
-        setupChildViewControllers(UIViewController.init(), "title2", "home_normal", "home_highlight")
-        setupChildViewControllers(UIViewController.init(), "title3", "home_normal", "home_highlight")
+        setupChildViewControllers(UIViewController.init(), "短视频", "shortLive_normal", "shortLive_highlight")
+        setupChildViewControllers(UIViewController.init(), "社区", "circle_normal", "circle_highlight")
+        setupChildViewControllers(UIViewController.init(), "我的", "me_normal", "me_highlight")
 //        setupChildViewControllers(UIViewController.init(), "title4", "home_normal", "home_highlight")
         
         setupTabBar()//更换tabBar

@@ -31,7 +31,7 @@ class XZHomeVC: XZBaseVC {
         myCollectionView.dataSource = self;
         myCollectionView.emptyDataSetSource = self;
         myCollectionView.emptyDataSetDelegate = self
-        myCollectionView.backgroundColor = ddBlueColor()
+        myCollectionView.backgroundColor = UIColor.white
         myCollectionView.register(XZHomeClassificationCell.self, forCellWithReuseIdentifier: NSStringFromClass(XZHomeClassificationCell.self))//分类
         myCollectionView.register(XZHomePageCell.self, forCellWithReuseIdentifier: NSStringFromClass(XZHomePageCell.self))
         myCollectionView.showsHorizontalScrollIndicator = false;
@@ -61,7 +61,6 @@ class XZHomeVC: XZBaseVC {
       
         DispatchQueue.main.asyncAfter(deadline: .now()+0.01) {
             
-             
             self.myCollectionView.scrollToItem(at: IndexPath(item: 1, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: false)
         }
        
@@ -75,17 +74,13 @@ class XZHomeVC: XZBaseVC {
     }
     
     
-    
-    
     //MARK:--创建collectionView
     private func setupCollectionView(){
-        
         view.addSubview(self.myCollectionView)
         self.myCollectionView.snp.makeConstraints { (make) in
             make.top.equalTo(DDSafeAreaTopHeight)
             make.left.right.bottom.equalToSuperview()
         }
-        
     }
     
     //导航
@@ -99,8 +94,6 @@ class XZHomeVC: XZBaseVC {
     }
     
 }
-
-
 
 //CollectionViewDelegate
 //MARK:-- UICollectionViewDataSource
@@ -138,12 +131,10 @@ extension XZHomeVC:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 //    }
     
     
-    
     override func viewDidLayoutSubviews() {
         // 屏幕旋转时调用
        super.viewDidLayoutSubviews()
         //默认滚动到第二个item（分类）
-       
         
             let orientation =  UIApplication.shared.statusBarOrientation;
        
@@ -207,10 +198,6 @@ extension XZHomeVC:XZHomeNavViewDelegate{
         topCollectionView.didScrollToIndex(indexPath: IndexPath(row: Int(pageNum), section: 0))
         
     }
-    
-    
-    
-    
     
     
     

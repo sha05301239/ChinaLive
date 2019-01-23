@@ -19,6 +19,10 @@
 		E31E033A21E7184600471EF9 /* XZHomeNomalItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033921E7184600471EF9 /* XZHomeNomalItemModel.swift */; };
 		E31E033D21E7189B00471EF9 /* XZBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E033C21E7189B00471EF9 /* XZBaseModel.swift */; };
 		E31E034521E741F000471EF9 /* XZNomalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E034421E741F000471EF9 /* XZNomalHeaderView.swift */; };
+		E333753721F6EDD9001D81A2 /* XZShortLiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333753621F6EDD9001D81A2 /* XZShortLiveVC.swift */; };
+		E333753D21F6EDF4001D81A2 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333753921F6EDF3001D81A2 /* VideoPlayerView.swift */; };
+		E333753E21F6EDF4001D81A2 /* VideoPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E333753A21F6EDF3001D81A2 /* VideoPlayerView.xib */; };
+		E333753F21F6EDF4001D81A2 /* VideoShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333753B21F6EDF4001D81A2 /* VideoShowView.swift */; };
 		E35E09D721DDA28D00CC0236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E09CF21DDA28D00CC0236 /* ViewController.swift */; };
 		E35E09D821DDA28D00CC0236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35E09D021DDA28D00CC0236 /* Assets.xcassets */; };
 		E35E09D921DDA28D00CC0236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35E09D121DDA28D00CC0236 /* LaunchScreen.storyboard */; };
@@ -52,6 +56,10 @@
 		E3B6C69921E82C2B00AF2A81 /* XZHomeNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6C69821E82C2B00AF2A81 /* XZHomeNavView.swift */; };
 		E3D89B5D21EEE69500CE7BAB /* XZEmptyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D89B5C21EEE69500CE7BAB /* XZEmptyHomeView.swift */; };
 		E3D89B5F21EF2C4000CE7BAB /* XZSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D89B5E21EF2C4000CE7BAB /* XZSearchVC.swift */; };
+		E3FBD96A21F5B1F20091B84E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FBD96921F5B1F20091B84E /* libsqlite3.tbd */; };
+		E3FBD96D21F5B8100091B84E /* XZSearchFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FBD96B21F5B8100091B84E /* XZSearchFMDBManager.m */; };
+		E3FBD97221F5B9330091B84E /* XZSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FBD97121F5B9330091B84E /* XZSearchModel.m */; };
+		E3FBD97421F5BCA80091B84E /* XZSearchFMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FBD97321F5BCA80091B84E /* XZSearchFMDB.swift */; };
 		E3FDBCCA21E5F98200BB75AF /* XZHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDBCC921E5F98200BB75AF /* XZHomeVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +77,10 @@
 		E31E033921E7184600471EF9 /* XZHomeNomalItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeNomalItemModel.swift; sourceTree = "<group>"; };
 		E31E033C21E7189B00471EF9 /* XZBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZBaseModel.swift; sourceTree = "<group>"; };
 		E31E034421E741F000471EF9 /* XZNomalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZNomalHeaderView.swift; sourceTree = "<group>"; };
+		E333753621F6EDD9001D81A2 /* XZShortLiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZShortLiveVC.swift; sourceTree = "<group>"; };
+		E333753921F6EDF3001D81A2 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		E333753A21F6EDF3001D81A2 /* VideoPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerView.xib; sourceTree = "<group>"; };
+		E333753B21F6EDF4001D81A2 /* VideoShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoShowView.swift; sourceTree = "<group>"; };
 		E35E09A421DDA16100CC0236 /* ChineseLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35E09CF21DDA28D00CC0236 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E35E09D021DDA28D00CC0236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +125,12 @@
 		E3B6C69821E82C2B00AF2A81 /* XZHomeNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeNavView.swift; sourceTree = "<group>"; };
 		E3D89B5C21EEE69500CE7BAB /* XZEmptyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZEmptyHomeView.swift; sourceTree = "<group>"; };
 		E3D89B5E21EF2C4000CE7BAB /* XZSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZSearchVC.swift; sourceTree = "<group>"; };
+		E3FBD96921F5B1F20091B84E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E3FBD96B21F5B8100091B84E /* XZSearchFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSearchFMDBManager.m; sourceTree = "<group>"; };
+		E3FBD96C21F5B8100091B84E /* XZSearchFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSearchFMDBManager.h; sourceTree = "<group>"; };
+		E3FBD97021F5B9330091B84E /* XZSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSearchModel.h; sourceTree = "<group>"; };
+		E3FBD97121F5B9330091B84E /* XZSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSearchModel.m; sourceTree = "<group>"; };
+		E3FBD97321F5BCA80091B84E /* XZSearchFMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZSearchFMDB.swift; sourceTree = "<group>"; };
 		E3FDBCC921E5F98200BB75AF /* XZHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZHomeVC.swift; sourceTree = "<group>"; };
 		FA257B7BB2EDF5FA7D346A27 /* Pods_ChineseLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChineseLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3FBD96A21F5B1F20091B84E /* libsqlite3.tbd in Frameworks */,
 				9B67E5D437DCB4475448F656 /* Pods_ChineseLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,18 +160,57 @@
 		7BF7DA864432437B1E5DF846 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3FBD96921F5B1F20091B84E /* libsqlite3.tbd */,
 				FA257B7BB2EDF5FA7D346A27 /* Pods_ChineseLive.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E30BAF3F21F010CB008C410B /* SearchCollectionView */ = {
+		E30BAF4421F05017008C410B /* XZHomeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				E30BAF4521F0502B008C410B /* VC */,
+				E30BAF4821F05040008C410B /* Model */,
+				E30BAF4721F05038008C410B /* View */,
+				E30BAF4621F05031008C410B /* ViewModel */,
+			);
+			path = XZHomeSearch;
+			sourceTree = "<group>";
+		};
+		E30BAF4521F0502B008C410B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E3D89B5E21EF2C4000CE7BAB /* XZSearchVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E30BAF4621F05031008C410B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3FBD96C21F5B8100091B84E /* XZSearchFMDBManager.h */,
+				E3FBD96B21F5B8100091B84E /* XZSearchFMDBManager.m */,
+				E3FBD97321F5BCA80091B84E /* XZSearchFMDB.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E30BAF4721F05038008C410B /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E30BAF4021F01109008C410B /* XZSearchCollectionView.swift */,
 				E30BAF4221F0111E008C410B /* XZSearchResultCollectionView.swift */,
 			);
-			path = SearchCollectionView;
+			path = View;
+			sourceTree = "<group>";
+		};
+		E30BAF4821F05040008C410B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3FBD97021F5B9330091B84E /* XZSearchModel.h */,
+				E3FBD97121F5B9330091B84E /* XZSearchModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E31E032F21E6DC6B00471EF9 /* View */ = {
@@ -162,7 +220,6 @@
 				E376BD6021E74CC0000C8035 /* XZNomalSectionView.swift */,
 				E3B6C69821E82C2B00AF2A81 /* XZHomeNavView.swift */,
 				E307C72021ED8ED300A120E4 /* XZHomeClassifHeaderView.swift */,
-				E30BAF3F21F010CB008C410B /* SearchCollectionView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +238,33 @@
 				E31E033C21E7189B00471EF9 /* XZBaseModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E333753421F6EDB2001D81A2 /* ShortLive */ = {
+			isa = PBXGroup;
+			children = (
+				E333753821F6EDE1001D81A2 /* View */,
+				E333753521F6EDBE001D81A2 /* VC */,
+			);
+			path = ShortLive;
+			sourceTree = "<group>";
+		};
+		E333753521F6EDBE001D81A2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E333753621F6EDD9001D81A2 /* XZShortLiveVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E333753821F6EDE1001D81A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E333753921F6EDF3001D81A2 /* VideoPlayerView.swift */,
+				E333753A21F6EDF3001D81A2 /* VideoPlayerView.xib */,
+				E333753B21F6EDF4001D81A2 /* VideoShowView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E35E099B21DDA16100CC0236 = {
@@ -213,6 +297,7 @@
 		E35E09B921DDA27600CC0236 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E333753421F6EDB2001D81A2 /* ShortLive */,
 				E35E09BA21DDA27600CC0236 /* Home */,
 				E35E09BB21DDA27600CC0236 /* Tools */,
 				E35E09BC21DDA27600CC0236 /* Public */,
@@ -225,6 +310,7 @@
 		E35E09BA21DDA27600CC0236 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E30BAF4421F05017008C410B /* XZHomeSearch */,
 				E3FDBCC821E5F92500BB75AF /* VC */,
 				E31E033821E7171500471EF9 /* Model */,
 				E31E032F21E6DC6B00471EF9 /* View */,
@@ -329,9 +415,9 @@
 			isa = PBXGroup;
 			children = (
 				E35E09F721DDA31C00CC0236 /* MBProgressHUD+XZExtension.h */,
+				E35E09FA21DDA31C00CC0236 /* MBProgressHUD+XZExtension.m */,
 				E35E09F821DDA31C00CC0236 /* XZMBProgressHUD.m */,
 				E35E09F921DDA31C00CC0236 /* XZMBProgressHUD.h */,
-				E35E09FA21DDA31C00CC0236 /* MBProgressHUD+XZExtension.m */,
 			);
 			path = XZMBProgressHUD;
 			sourceTree = "<group>";
@@ -405,7 +491,6 @@
 			isa = PBXGroup;
 			children = (
 				E3FDBCC921E5F98200BB75AF /* XZHomeVC.swift */,
-				E3D89B5E21EF2C4000CE7BAB /* XZSearchVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -472,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35E09DA21DDA28D00CC0236 /* Main.storyboard in Resources */,
+				E333753E21F6EDF4001D81A2 /* VideoPlayerView.xib in Resources */,
 				E35E0A0121DDA31C00CC0236 /* GuideImage.bundle in Resources */,
 				E35E09D821DDA28D00CC0236 /* Assets.xcassets in Resources */,
 				E35E09D921DDA28D00CC0236 /* LaunchScreen.storyboard in Resources */,
@@ -491,11 +577,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ChineseLive/Pods-ChineseLive-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${PODS_ROOT}/PLPlayerKit/Pod/Library-Universal/PLPlayerKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -506,11 +594,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PLPlayerKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -560,6 +650,8 @@
 				E30BAF4121F01109008C410B /* XZSearchCollectionView.swift in Sources */,
 				E35E09DB21DDA28D00CC0236 /* AppDelegate.swift in Sources */,
 				E3B6C69921E82C2B00AF2A81 /* XZHomeNavView.swift in Sources */,
+				E3FBD97221F5B9330091B84E /* XZSearchModel.m in Sources */,
+				E333753D21F6EDF4001D81A2 /* VideoPlayerView.swift in Sources */,
 				E35E09FD21DDA31C00CC0236 /* XZNetWorkingTool.swift in Sources */,
 				E35E0A0821DDA31C00CC0236 /* MBProgressHUD+XZExtension.m in Sources */,
 				E35E0A0221DDA31C00CC0236 /* DHGifImageOperation.m in Sources */,
@@ -570,19 +662,23 @@
 				E380590F21E3212700B4F8A9 /* WRCustomNavigationBar.swift in Sources */,
 				E35E0A0521DDA31C00CC0236 /* XZPublicTools.swift in Sources */,
 				E380591221E32E3D00B4F8A9 /* XZBaseView.swift in Sources */,
+				E3FBD96D21F5B8100091B84E /* XZSearchFMDBManager.m in Sources */,
 				E35E0A0621DDA31C00CC0236 /* XZMyPickerView.swift in Sources */,
 				E307C72321ED90C000A120E4 /* XZHomeClassItemCell.swift in Sources */,
 				E3FDBCCA21E5F98200BB75AF /* XZHomeVC.swift in Sources */,
 				E35E0A0321DDA31C00CC0236 /* XZGuidePageHUDVC.m in Sources */,
+				E333753721F6EDD9001D81A2 /* XZShortLiveVC.swift in Sources */,
 				E35E09D721DDA28D00CC0236 /* ViewController.swift in Sources */,
 				E35E09FE21DDA31C00CC0236 /* NSArray+HYBUnicodeReadable.m in Sources */,
 				E376BD6121E74CC0000C8035 /* XZNomalSectionView.swift in Sources */,
 				E35E0A1421DDABF700CC0236 /* XZTabBarVC.swift in Sources */,
 				E31E033A21E7184600471EF9 /* XZHomeNomalItemModel.swift in Sources */,
 				E31E033521E6EF2F00471EF9 /* XZHomeNomalCell.swift in Sources */,
+				E333753F21F6EDF4001D81A2 /* VideoShowView.swift in Sources */,
 				E380591421E32EE900B4F8A9 /* XZLoginSelectCountryView.swift in Sources */,
 				E35E0A0421DDA31C00CC0236 /* DHGuidePageHUD.m in Sources */,
 				E35E0A1221DDABBF00CC0236 /* XZBaseVC.swift in Sources */,
+				E3FBD97421F5BCA80091B84E /* XZSearchFMDB.swift in Sources */,
 				E380590921E2E6DC00B4F8A9 /* XZUserHelper.swift in Sources */,
 				E3D89B5F21EF2C4000CE7BAB /* XZSearchVC.swift in Sources */,
 				E35E0A1721DDAC1300CC0236 /* XZTabbar.swift in Sources */,
@@ -736,6 +832,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7483HXR3HC;
 				INFOPLIST_FILE = "$(SRCROOT)/ChineseLive/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -756,6 +853,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7483HXR3HC;
 				INFOPLIST_FILE = "$(SRCROOT)/ChineseLive/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
